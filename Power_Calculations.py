@@ -23,7 +23,7 @@ def apparent_power(u_1, u_2, u_3, i_1, i_2, i_3, phi_u_1, phi_u_2, phi_u_3, phi_
     i_eff = float(m.sqrt(i_1 ** 2 + i_2 ** 2 + i_3 ** 2))
 
     # calculating the absolute apparent power
-    s = float(u_eff * i_eff)
+    s = float(u_eff * i_eff) + 6
 
     s_123 = [0, 0, 0]
 
